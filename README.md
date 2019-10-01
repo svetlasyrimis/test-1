@@ -23,6 +23,7 @@ I plan on using a card deck API [API](https://deckofcardsapi.com/).  I plan to u
 - points accumulated and recorded
 - Cards are fully shuffled between games
 - Cards drawn from pile when needed and players card added to upturned card when match is recognized
+- modals for navigation bar
 
 ## Strech Goals
 
