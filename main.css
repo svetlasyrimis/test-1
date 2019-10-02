@@ -1,0 +1,30 @@
+body {
+  background-color: aqua;
+  height: 200px;
+  width: 200px;
+}
+
+main {
+  background-color: aqua;
+  height: 200px;
+  width: 200px;
+}
+
+.players-cards {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+
+
+.opponents-cards {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+}
+
+.top-card {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+}
