@@ -15,28 +15,29 @@ const getData = async () => {
   console.log(topCard)
   
   const showPlayersCards = (cards) => {
-    let john = document.querySelector('.players-cards')
+    let playersCards = document.querySelector('.players-cards')
     cards.forEach((card) => {
-      let el = document.createElement('div');
-      el.innerHTML = `<img src=${card.image} />`
+      let playerCardChosen = document.createElement('div');
+      playerCardChosen.innerHTML = `<img src=${card.image} />`
       
-      john.append(el)
+      playersCards.append(playerCardChosen)
     })
   }
   const showOpponentsCards = (cards) => {
-    let chris = document.querySelector('.opponents-cards')
+    let opponentsCards = document.querySelector('.opponents-cards')
     cards.forEach((card) => {
-      let enki = document.createElement('div');
-      enki.innerHTML = `<img src=${card.image} />`
-      chris.append(enki)
+      let opponentsCardChosen = document.createElement('div');
+      opponentsCardChosen.innerHTML = `<img src=${card.image} />`
+      opponentsCards.append(opponentsCardChosen)
     })
   }
   const showTopCard = (cards) => {
-    let tom = document.querySelector('.top-card')
+    let topCard = document.querySelector('.top-card')
     cards.forEach((card) => {
-      let enlil = document.createElement('div');
-      enlil.innerHTML = `<img src=${card.image} />`
-      tom.append(enlil)
+      let topCardAppended = document.createElement('div');
+      topCardAppended.innerHTML = `<img src=${card.image} />`
+      topCard.append(topCardAppended)
+    
     })
   }
   showPlayersCards(playerDraws.data.cards)
@@ -48,17 +49,27 @@ button.addEventListener("click", getData)
 
 // player chooses a card to throw on the discard pile 
 
-const pickCard = () => { 
+const ridCard = (array) => {
+  for (let i = 0; i < array.length; i += 1)
+    
+    
+  }
+}
+
+
+
+
+ 
 
 }
 
-for (let i = 0; i < playerDraws.length; i += 1) {
+ {
    playerDraws[i].addeventlistener("click", pickCard)
   }
 
+const 
 
-
-// const drawNewCard = await axios.get(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=1`)
+const drawNewCard = await axios.get(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=1`)
 
 
 
